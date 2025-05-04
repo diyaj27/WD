@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WEB DEVELOPMENT ASSIGNMENTS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📘 WEB DEVELOPMENT ASSIGNMENTS</h1>
+
+    <h3>
+      <div class="info-box">
+        <p><strong>Name:</strong> Diya Jangme</p>
+        <p><strong>Roll No:</strong> 67</p>
+      </div>
+    </h3>
+
+    <div class="category-buttons">
+      <button onclick="showAssignments('html')">HTML</button>
+      <button onclick="showAssignments('css')">CSS</button>
+      <button onclick="showAssignments('xml')">XML</button>
+    </div>
+    <div id="assignments" class="assignments"></div>
+  </div>
+
+  <script>
+    const assignmentsData = {
+      html: [
+        {
+          text: "Assignment 2",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-2.html" // Example link
+        },
+        {
+          text: "Assignment 3",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-3.html" // Example link
+        },
+        {
+          text: "Assignment 4",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-4.html" // Example link
+        },
+        {
+          text: "Assignment 5",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-5.html" // Example link
+        },
+        {
+          text: "Assignment 6",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-6.html" // Example link
+        },
+        {
+          text: "Assignment 7",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-7.html" // Example link
+        },
+        {
+          text: "Assignment 8",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-8.html" // Example link
+        },
+        {
+          text: "Assignment 9",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-9.html" // Example link
+        },
+        {
+          text: "Assignment 10",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/assign-10.html" // Example link
+        }
+      ],
+      css: [
+        {
+          text: "Assignment 1: Inline CSS",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/inlineCSS.html" // Example link
+        },
+        {
+          text: "Assignment 2: Internal CSS",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/internalCSS.html" // Example link
+        },
+        {
+          text: "Assignment 3: External CSS",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/externalCSS.html" // Example link
+        }
+      ],
+      xml: [
+        {
+          text: "Assignment 1: XML using CSS",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/books.xml" // Example link
+        },
+        {
+          text: "Assignment 2: XML using XSL",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/employees_output.htm" // Example link
+        },
+        {
+          text: "Assignment 3: XML using XSL with if-conditional statement",
+          link: "file:///C:/Users/Diya/Downloads/Diya67%20WD-20250416T072950Z-001/Diya67%20WD/assignments/students_output.htm" // Example link
+        }
+      ]
+    };
+
+    function showAssignments(type) {
+      const container = document.getElementById("assignments");
+      container.innerHTML = "";
+
+      assignmentsData[type].forEach(({ text, link }) => {
+        const btn = document.createElement("div");
+        btn.className = "assignment-button";
+        btn.innerHTML = `<a href="${link}" target="_blank">${text}</a>`;
+        container.appendChild(btn);
+      });
+    }
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students>
+    <student>
+        <name>Jane Doe</name>
+        <roll>101</roll>
+        <marks>85</marks>
+    </student>
+    <student>
+        <name>John Smith</name>
+        <roll>102</roll>
+        <marks>45</marks>
+    </student>
+    <student>
+        <name>Emily Johnson</name>
+        <roll>103</roll>
+        <marks>72</marks>
+    </student>
+    <student>
+        <name>Tom Harris</name>
+        <roll>104</roll>
+        <marks>33</marks>
+    </student>
+</students>

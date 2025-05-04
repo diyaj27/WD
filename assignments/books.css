@@ -1,0 +1,26 @@
+library {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+book {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+title {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+author, year, genre {
+    display: block;
+    margin-left: 10px;
+}
